@@ -1,0 +1,30 @@
+# Dependencies
+/vendor/
+
+# Environment
+.env
+
+# SQLite Database
+/database/*.sqlite
+/database/*.sqlite-journal
+/database/*.sqlite-wal
+/database/*.sqlite-shm
+
+# Smarty compiled templates and cache
+/templates_c/*
+!/templates_c/.gitkeep
+/cache/*
+!/cache/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

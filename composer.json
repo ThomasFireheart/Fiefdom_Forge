@@ -1,0 +1,16 @@
+{
+    "name": "fiefdom/forge",
+    "description": "Medieval City Simulation Game",
+    "type": "project",
+    "require": {
+        "smarty/smarty": "^5.7",
+        "ayesh/php-timer": "^2.2",
+        "vlucas/phpdotenv": "^5.6",
+        "fakerphp/faker": "^1.24"
+    },
+    "autoload": {
+        "psr-4": {
+            "FiefdomForge\\": "src/"
+        }
+    }
+}
