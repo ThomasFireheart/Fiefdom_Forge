@@ -182,7 +182,7 @@
             <div class="footer-links">
                 <span>Build your realm. Shape history.</span>
             </div>
-            <p class="footer-copyright">&copy; {$smarty.now|date_format:"%Y"} Fiefdom Forge</p>
+            <p class="footer-copyright">&copy; {$smarty.now|date_format:"%Y"} Fiefdom Forge | Page rendered in {$page_render_time|default:'0.00'} ms</p>
         </div>
     </footer>
 

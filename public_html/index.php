@@ -12,6 +12,9 @@ ini_set('display_errors', '1');
 // Autoload
 require_once __DIR__ . '/../vendor/autoload.php';
 
+// Start page render timer
+\Ayesh\PHP_Timer\Timer::start('page_render');
+
 use FiefdomForge\Config;
 use FiefdomForge\Database;
 use FiefdomForge\Session;

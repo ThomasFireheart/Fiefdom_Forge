@@ -3,6 +3,7 @@
 namespace FiefdomForge;
 
 use Smarty\Smarty;
+use Ayesh\PHP_Timer\Timer;
 
 class View
 {
@@ -82,6 +83,10 @@ class View
         // Add CSRF token for forms
         $this->smarty->assign('csrf_token', Session::getCsrfToken());
         $this->smarty->assign('csrf_field', Session::csrfField());
+
+        // Add page render time
+        $renderTime = Timer::read('page_render', Timer::FORMAT_MILLISECONDS);
+        $this->smarty->assign('page_render_time', $renderTime);
 
         return $this->smarty->fetch($template);
     }
